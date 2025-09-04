@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional To-Do List — Animated</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1 class="logo">My To-Do List</h1>
+      <button id="toggleMode" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <div class="input-group card">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." aria-label="Task input"/>
+      <button id="addBtn" class="primary-btn">Add</button>
+    </div>
+
+    <section class="task-section card">
+      <h2>Active Tasks</h2>
+      <ul id="taskList" class="list"></ul>
+    </section>
+
+    <section class="task-section card">
+      <h2>Deleted Tasks</h2>
+      <ul id="deletedList" class="list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
